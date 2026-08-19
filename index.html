@@ -221,6 +221,25 @@
     font-size: 11px; color: var(--text-muted); line-height: 1.5; font-style: italic;
   }
 
+  /* PLATFORMS STRIP */
+  .platforms-strip {
+    display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
+    padding: 26px 0; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft);
+  }
+  .platforms-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted); white-space: nowrap;
+  }
+  .platforms-list { display: flex; flex-wrap: wrap; gap: 10px; }
+  .platform-badge {
+    font-size: 12.5px; font-weight: 600; color: var(--text-soft);
+    background: var(--navy-700); border: 1px solid var(--line); border-radius: 20px; padding: 7px 16px;
+  }
+  @media (max-width: 768px) {
+    .platforms-strip { flex-direction: column; align-items: flex-start; gap: 14px; padding: 20px 0; }
+    .platform-badge { font-size: 12px; padding: 6px 14px; }
+  }
+
   /* MAIN CONTENT */
   section.block { padding: 90px 0; position: relative; }
   .section-alt { background: var(--navy-800); }
@@ -628,6 +647,24 @@
           </div>
           <div class="card-footnote">Conteúdo de referência. Não substitui análise jurídica individualizada do caso concreto.</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding: 0;">
+  <div class="container">
+    <div class="platforms-strip reveal">
+      <span class="platforms-label">Atuação em casos envolvendo</span>
+      <div class="platforms-list">
+        <span class="platform-badge">Instagram</span>
+        <span class="platform-badge">WhatsApp</span>
+        <span class="platform-badge">Facebook</span>
+        <span class="platform-badge">TikTok</span>
+        <span class="platform-badge">X (Twitter)</span>
+        <span class="platform-badge">iFood</span>
+        <span class="platform-badge">Uber</span>
+        <span class="platform-badge">e outras plataformas digitais</span>
       </div>
     </div>
   </div>
